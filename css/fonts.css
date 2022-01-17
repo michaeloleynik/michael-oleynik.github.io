@@ -1,0 +1,37 @@
+/* roboto-300 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto"; /* Устанавливаем семейство шрифта, которое будет использоваться для оформления текста*/
+  font-style: normal; /* Определяем начертание шрифта, в данном случае обычное */
+  font-weight: 300; /* Определяем жирность шрифта */
+  font-display: swap; /* Определяет то, как шрифт, подключенный через font face будет отображаться в зависимости от того, загрузился ли он и готов ли к использованию. Swap - загружает шрифты сразу без замены на резервные */
+
+  src: local("Roboto Light"), local("Roboto-Light"), /* Шрифт находиться локально */
+       url("../fonts/roboto-300.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/roboto-300.woff") format("woff") /* Modern Browsers */
+}
+
+/* roboto-regular - latin_cyrillic */
+
+@font-face {
+  font-family: "Roboto"; /* Устанавливаем семейство шрифта, которое будет использоваться для оформления текста*/
+  font-style: normal; /* Определяем начертание шрифта, в данном случае обычное */
+  font-weight: 400; /* Определяем жирность шрифта */
+  font-display: swap; /* Определяет то, как шрифт, подключенный через font face будет отображаться в зависимости от того, загрузился ли он и готов ли к использованию. Swap - загружает шрифты сразу без замены на резервные */
+
+  src: local("Roboto"), local("Roboto-Regular"), /* Шрифт находиться локально */
+       url("../fonts/roboto-regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/roboto-regular.woff") format("woff") /* Modern Browsers */
+}
+
+/* roboto-700 - latin_cyrillic */
+
+@font-face {
+  font-family: "Roboto"; /* Устанавливаем семейство шрифта, которое будет использоваться для оформления текста*/
+  font-style: normal; /* Определяем начертание шрифта, в данном случае обычное */
+  font-weight: 700; /* Определяем жирность шрифта */
+  font-display: swap; /* Определяет то, как шрифт, подключенный через font face будет отображаться в зависимости от того, загрузился ли он и готов ли к использованию. Swap - загружает шрифты сразу без замены на резервные */
+
+  src: local("Roboto Bold"), local("Roboto-Bold"), /* Шрифт находиться локально */
+       url("../fonts/roboto-700.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/roboto-700.woff") format("woff") /* Modern Browsers */
+}

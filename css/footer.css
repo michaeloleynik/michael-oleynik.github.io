@@ -1,0 +1,161 @@
+/*Стили для футера*/
+
+.footer {
+    padding: 65px 0 0;
+
+    background: #fff;
+}
+
+.footer__flex-container {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*Стили для списка навигации*/
+
+.footer__nav {
+    font-size: 17px;
+
+    padding: 0 10px;
+
+    list-style-type: none;
+
+    color: #8993ad;
+
+    transition: .4s;
+}
+
+.footer__nav-link {
+    padding: 4px 0;
+}
+
+.footer__nav-link:first-child {
+    padding-top: 0;
+}
+
+.footer__nav-link:hover {
+    color: #07a1bd;
+}
+
+/*Стили для блока с контактами*/
+
+.footer__contacts {
+    font-size: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 14px;
+    margin-left: 85px;
+}
+
+.footer__contacts-link {
+    font-style: normal;
+
+    margin-bottom: 24px;
+    padding-left: 40px;
+
+    color: #000;
+}
+
+.footer__number {
+    background-image: url("../img/desktop-images/phone.png");
+    background-position: left;
+}
+
+.footer__e-mail {
+    background-image: url("../img/desktop-images/mail.png");
+    background-position: left;
+}
+
+/*Стили для кнопки заказа звонка и соц. сетей*/
+
+.footer__recall-button-and-social-webs {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__recall-button {
+    margin: 10px 15px 30px 0;
+    padding: 13.5px 62px;
+
+    transition-duration: .25s;
+
+    color: #07a1bd;
+    border: none;
+    border: 1px solid #07a1bd;
+    background: transparent;
+}
+
+.footer__recall-button:hover {
+    color: #fff;
+    background: linear-gradient(190deg, #14d16f, #07a1bd);
+}
+
+.footer__social-webs {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+.footer__social-webs-li {
+    width: 39px;
+    height: 30px;
+    margin: 0 8px;
+}
+
+.footer__social-webs-li:first-child {
+    margin-left: 0;
+}
+
+.footer__social-webs-li:last-child {
+    margin-right: 0;
+}
+
+.footer__social-webs-link {
+    display: inline-flex;
+
+    width: 39px;
+    height: 30px;
+}
+
+.footer__vk-link {
+    background: url("../img/desktop-images/social-webs.png");
+}
+
+.footer__fb-link {
+    background-image: url("../img/desktop-images/social-webs.png");
+    background-position: 35% 0;
+}
+
+.footer__tw-link {
+    background-image: url("../img/desktop-images/social-webs.png");
+    background-position: 70% 0;
+}
+
+.footer__inst-link {
+    background-image: url("../img/desktop-images/social-webs.png");
+    background-position: 105% 0;
+}
+
+/*Стили для подписи с авторскими правами*/
+
+.footer__author-rights {
+    font-size: 15px;
+
+    display: flex;
+
+    margin: 61px 0 0;
+    padding: 13px 0;
+
+    color: #fff;
+    background: #31293c;
+
+    align-items: flex-end;
+    justify-content: center;
+}

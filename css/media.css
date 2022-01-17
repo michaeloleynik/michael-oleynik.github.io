@@ -1,0 +1,691 @@
+/*Стили для контейнера-центровщика*/
+
+.fixed-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .fixed-container {
+        width: 945px;
+        padding: 0 40px;
+    }
+
+    /*Стили для шапки и навигации*/
+
+    .header__nav-and-phone .fixed-container {
+        padding: 0 5px;
+    }
+
+    .header__nav-and-phone .header__burger-menu {
+        position: relative;
+
+        display: block;
+
+        width: 45px;
+        height: 34px;
+        margin-top: -5px;
+
+        border: 0;
+        background: #fbfbfb;
+    }
+
+    /*Стили для бургера*/
+
+    .header__burger-menu-main-stick {
+        position: absolute;
+        top: 16px;
+        left: 0;
+
+        width: 100%;
+        height: 5px;
+
+        transition-duration: .3s;
+
+        background: linear-gradient(-120deg, #14d16f, #07a1bd);
+    }
+
+    .header__nav-and-phone .header__burger-menu::before,
+    .header__nav-and-phone .header__burger-menu::after {
+        position: absolute;
+        left: 0;
+
+        width: 100%;
+        height: 5px;
+
+        content: "";
+        transition-duration: .3s;
+
+        background: linear-gradient(-120deg, #14d16f, #07a1bd);
+    }
+
+    .header__nav-and-phone .header__burger-menu::before {
+        top: 3px;
+    }
+
+    .header__nav-and-phone .header__burger-menu::after {
+        bottom: 0;
+    }
+
+    .header__burger-menu.active .header__burger-menu-main-stick {
+        display: none;
+    }
+
+    .header__nav-and-phone .header__burger-menu.active::before {
+        top: 14px;
+
+        transform: rotate(45deg);
+    }
+
+    .header__nav-and-phone .header__burger-menu.active::after {
+        bottom: 14px;
+
+        transform: rotate(-45deg);
+    }
+
+    /*Стили для навигации*/
+
+    .header__nav-and-phone .header__nav {
+        font-size: 18px;
+
+        position: absolute;
+        z-index: 10;
+        top: 100px;
+        left: 0;
+
+        display: none;
+
+        width: 100%;
+        padding: 30px;
+
+        text-align: center;
+
+        color: #fff;
+        background: linear-gradient(-120deg, #14d16f, #07a1bd);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
+        order: 3;
+    }
+
+    .header__burger-menu.active .header__nav {
+        display: block;
+    }
+
+    .header__nav .header__nav-link {
+        outline-color: #fff;
+        background-image: linear-gradient(#fff, #fff);
+    }
+
+    .header__nav .header__nav-link:hover {
+        color: #fff;
+    }
+
+    /*Стили для кнопки заказа звонка*/
+
+    .header .header__recall-button {
+        margin-right: -11px;
+        padding: 12px 39px;
+    }
+
+    /*Стили для блока с фото и заголовком*/
+
+    .header__title-and-photo .fixed-container {
+        padding: 0;
+    }
+
+    .header__title-and-photo .header__title-container {
+        padding: 83px 7px 136px;
+    }
+
+    /*Стили для заголовка*/
+
+    .header__title-and-photo .header__title {
+        font-size: 54px;
+
+        margin-bottom: 0;
+    }
+
+    .header__title .header__title-description {
+        margin-top: 10px;
+    }
+
+    .header__title-and-photo .header__more-button {
+        padding: 24px 96px;
+    }
+
+    /*Стили для частичек*/
+
+    .header__title-and-photo .header__piece_brackets-elem {
+        top: 19%;
+        left: 8%;
+    }
+
+    .header__title-and-photo .header__piece_div-tag-elem--small {
+        top: 18.5%;
+        left: 88.5%;
+    }
+
+    .header__title-and-photo .header__piece_sharp-elem {
+        top: 81%;
+        left: 6%;
+    }
+
+    .header__title-and-photo .header__piece_slash-elem {
+        bottom: 28.3%;
+        left: 19.8%;
+    }
+
+    .header__title-and-photo .header__piece_div-tag-elem--big {
+        bottom: 62%;
+        left: 41.8%;
+    }
+
+    .main__what-i-do .main__what-i-do-title {
+        margin: 0 28px 73px 13px;
+    }
+
+    .main__what-i-do .main__what-i-do-list {
+        margin-bottom: 17px;
+        padding: 0 45px 0 55px;
+
+        /* flex-wrap: wrap; */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /*Стили для блока что я делаю*/
+
+    .main__what-i-do-list .main__what-i-do-li {
+        flex-direction: column;
+
+        padding: 90px 45px 80px;
+
+        background-position: 51% 0;
+
+        flex: 1 1 50%;
+        align-items: center;
+    }
+
+    .main__what-i-do-list .main__what-i-do-li:first-child {
+        padding-left: 50px;
+    }
+
+    .main__what-i-do-list .main__what-i-do-li:last-child {
+        padding-right: 50px;
+    }
+
+    .main__what-i-do .main__how-much {
+        padding: 24px 83px;
+    }
+
+    /*Стили для блока мои работы*/
+
+    .main__my-works .main__my-works-title {
+        margin: 0 0 85px 5px;
+    }
+
+    /*Стили для слайдера*/
+
+    .main__my-works .main__slider {
+        font-size: 25px;
+
+        margin-bottom: 99px;
+        padding: 0 5px;
+    }
+
+    .main__slider .main__slider-list {
+        margin-bottom: 100px;
+    }
+
+    .main__slider-list .main__slider-item {
+        max-width: 50%;
+
+        flex: 0 0 50%;
+    }
+
+    .main__slider-item .main__photo {
+        width: 455px;
+        height: 360px;
+        margin-bottom: 6px;
+    }
+
+
+    .main__slider .main__slider-btn {
+        display: none;
+    }
+
+    .main__slider .main__slider-indicator-list {
+        opacity: 1;
+    }
+
+    /*Стили для кнопки узнать стоимость*/
+
+    .main__my-works .main__how-much {
+        margin-left: 0;
+        padding: 24px 90px;
+    }
+
+    .main .main__my-works .fixed-container {
+        width: 1005px;
+        padding: 0 15px 0 10px;
+    }
+
+    /*Стили для блока с частицами и заголовком про адаптивную вёрстку*/
+
+    .main .main__banner-with-price .fixed-container {
+        padding: 0 10px;
+    }
+
+    /*Стили для частиц*/
+
+    .main__banner-with-price .main__piece {
+        font-size: 33px;
+    }
+
+    .main__banner-with-price .main__piece_brackets-elem--smaller {
+        top: 4%;
+        left: 15.5%;
+    }
+
+    /* .main__banner-with-price .main__piece_sharp-elem,
+    .main__banner-with-price .main__piece_brackets-elem--bigger {
+        display: none;
+    } */
+
+    .main__banner-with-price .main__piece_div-tag-elem {
+        font-size: 25px;
+
+        right: 43.6%;
+        bottom: 1%;
+    }
+
+    .main__banner-with-price .main__piece_slash-elem {
+        font-size: 40px;
+
+        top: 22.5%;
+        right: 10%;
+    }
+
+    /*Стили для футера*/
+
+    .body .footer {
+        padding: 88px 0 0;
+    }
+
+    .footer .fixed-container {
+        padding: 0;
+    }
+
+    /*Стили для блока контактов*/
+
+    .footer .footer__contacts {
+        margin-left: 51px;
+    }
+
+    /*Стили для кнопки заказать звонок*/
+
+    .footer .footer__recall-button {
+        margin-right: -10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .fixed-container {
+        width: 320px;
+        padding: 0 20px;
+    }
+
+    /*Стили для шапки*/
+
+    .wrapper .header {
+        min-height: 685px;
+        padding-top: 25px;
+    }
+
+    /*Стили для шапки и навигации*/
+
+    .header__nav-and-phone .header__burger-menu {
+        width: 24px;
+        height: 19px;
+    }
+
+    .header .header__burger-menu {
+        margin: 0 38px 0 0;
+    }
+
+    .header__burger-menu-main-stick {
+        top: 8px;
+
+        height: 3px;
+    }
+
+    .header__nav-and-phone .header__burger-menu::before,
+    .header__nav-and-phone .header__burger-menu::after {
+        height: 3px;
+    }
+
+    .header__nav-and-phone .header__burger-menu::before {
+        top: 0;
+    }
+
+    .header__nav-and-phone .header__burger-menu::after {
+        bottom: 0;
+    }
+
+    .header__nav-and-phone .header__burger-menu.active::before {
+        top: 8px;
+    }
+
+    .header__nav-and-phone .header__burger-menu.active::after {
+        bottom: 8px;
+    }
+
+    .header__nav-and-phone .header__nav {
+        top: 80px;
+    }
+
+    .header__nav-and-phone .header__nav-flex-container {
+        justify-content: center;
+    }
+
+    .header__nav-and-phone .header__nav {
+        font-size: 15px;
+
+        padding: 10px;
+    }
+
+    /*Стили для кнопки заказать обратный звонок*/
+
+    .header__phone-and-recall-button .header__phone {
+        font-size: 15px;
+
+        margin-right: 28px;
+    }
+
+    .header__phone-and-recall-button .header__recall-button {
+        width: 26px;
+        height: 26px;
+        margin: 0;
+        padding: 5px 0;
+
+        border: none;
+        outline-color: #07a1bd;
+        background: url("../img/mobile-images/phone.png") left;
+    }
+
+    .header__recall-button .header__recall-button-text {
+        display: none;
+    }
+
+    /*Стили для фото из заголовка*/
+
+    .header .header__title-and-photo {
+        padding-top: 50px;
+
+        background: none;
+    }
+
+    .header__title-flex-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .header__title-and-photo .header__title-container {
+        padding: 9px 12px;
+
+        text-align: center;
+    }
+
+    .header__title-container .header__title {
+        font-size: 30px;
+
+        padding-bottom: 46px;
+    }
+
+    .header__title .header__title-description {
+        font-size: 15px;
+
+        margin-top: 2px;
+    }
+
+    .header__title-container .header__more-button {
+        padding: 18px 77px;
+    }
+
+    /*Стили для фото*/
+
+    .header__title-and-photo .header__photo-container {
+        display: flex;
+
+        width: 100%;
+        padding: 0 10px 0 60px;
+
+        background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='470px' height='391px'><defs><linearGradient id='PSgrad_0' x1='0%25' x2='22.495%25' y1='97.437%25' y2='0%25'><stop offset='0%25' stop-color='rgb(7, 240, 120)' stop-opacity='1' /><stop offset='99%25' stop-color='rgb(7, 161, 189)' stop-opacity='1' /></linearGradient></defs><path fill-rule='evenodd' fill='rgb(96, 85, 196)' d='M201.920,21.253 C256.483,-4.540 307.974,-4.620 351.023,14.742 C394.183,33.947 428.902,72.593 452.485,120.621 C475.114,169.126 475.090,221.226 456.609,263.372 C437.871,306.146 406.685,338.394 364.188,361.409 C341.681,372.998 318.023,380.937 287.948,385.810 C258.270,390.612 222.173,392.348 183.930,389.871 C108.035,385.106 22.977,362.735 5.039,312.275 C-5.126,287.219 1.255,258.497 13.893,229.592 C26.738,200.646 45.842,171.517 65.899,144.673 C86.163,117.787 107.382,93.186 129.227,72.322 C151.279,51.416 173.958,34.248 201.920,21.253 L201.920,21.253 Z'/><path fill='url(%23PSgrad_0)' d='M201.920,21.253 C256.483,-4.540 307.974,-4.620 351.023,14.742 C394.183,33.947 428.902,72.593 452.485,120.621 C475.114,169.126 475.090,221.226 456.609,263.372 C437.871,306.146 406.685,338.394 364.188,361.409 C341.681,372.998 318.023,380.937 287.948,385.810 C258.270,390.612 222.173,392.348 183.930,389.871 C108.035,385.106 22.977,362.735 5.039,312.275 C-5.126,287.219 1.255,258.497 13.893,229.592 C26.738,200.646 45.842,171.517 65.899,144.673 C86.163,117.787 107.382,93.186 129.227,72.322 C151.279,51.416 173.958,34.248 201.920,21.253 L201.920,21.253 Z'/></svg>") no-repeat 40% -67%;
+
+        justify-content: center;
+        order: -1;
+    }
+
+    /*Стили для частиц*/
+
+    .header__title-and-photo .header__piece {
+        font-size: 25px;
+    }
+
+    .header__title-and-photo .header__piece_brackets-elem {
+        top: 13.5%;
+        left: 16%;
+    }
+
+    .header__title-and-photo .header__piece_div-tag-elem--small {
+        display: none;
+    }
+
+    .header__title-and-photo .header__piece_sharp-elem {
+        font-size: 27px;
+
+        top: 29%;
+        left: 12%;
+    }
+
+    .header__title-and-photo .header__piece_slash-elem {
+        font-size: 22px;
+
+        bottom: 84.3%;
+        left: 52.8%;
+    }
+
+    .header__title-and-photo .header__piece_div-tag-elem--big {
+        font-size: 20px;
+
+        bottom: 79%;
+        left: 74.8%;
+    }
+
+    /*Стили для блока что я делаю*/
+
+    .main .main__what-i-do {
+        padding: 0 0 10px;
+    }
+
+    .main__what-i-do .main__what-i-do-flex-container {
+        flex-wrap: nowrap;
+    }
+
+    .main .main__what-i-do-title {
+        font-size: 30px;
+
+        margin: 0 0 33px;
+    }
+
+    .main .main__what-i-do-list {
+        margin: 0;
+        padding: 0;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    }
+
+    .main__what-i-do-list .main__what-i-do-li {
+        padding: 71px 38px 51px;
+
+        background-size: 62px;
+    }
+
+    .main__what-i-do-list .main__what-i-do-li:first-child {
+        padding-left: 35px;
+    }
+
+    .main__what-i-do-list .main__what-i-do-li:last-child {
+        padding-right: 35px;
+    }
+
+    .main__what-i-do-li .main__what-i-do-description {
+        font-size: 16px;
+    }
+
+    .main__what-i-do .main__how-much {
+        font-size: 16px;
+
+        margin-left: 0;
+        padding: 17px 71px;
+    }
+
+    /*Стили для блока мои работы*/
+
+    .main .main__my-works {
+        padding: 77px 0 51px;
+    }
+
+
+    .main .main__my-works .fixed-container {
+        width: 320px;
+        padding: 0 20px;
+    }
+
+    .main__my-works .main__my-works-title {
+        font-size: 30.5px;
+        line-height: 39px;
+
+        margin: 0 0 33px 0;
+
+        text-align: center;
+    }
+
+    /*Стили для слайдера*/
+
+    .main__my-works .main__slider {
+        font-size: 17.5px;
+
+        margin-bottom: 51px;
+        padding: 0;
+    }
+
+    .main__slider .main__slider-list {
+        margin-bottom: 43px;
+        padding: 0;
+    }
+
+    .main__slider-list .main__slider-item {
+        max-width: 100%;
+        padding: 0;
+
+        flex: 0 0 100%;
+    }
+
+    .main__slider-item .main__photo {
+        height: 251px;
+    }
+
+    .main__slider-indicator-list .main__slider-indicator-dot {
+        width: 10px;
+        height: 10px;
+        margin: 0 8px;
+    }
+
+    .main__my-works .main__how-much {
+        font-size: 16px;
+
+        padding: 17px 76px;
+    }
+
+    /*Стили для блока с заголовком про адаптивную вёрстку*/
+
+    .main .main__banner-with-price {
+        padding: 39px 0 40px;
+    }
+
+    .main .main__banner-with-price .fixed-container {
+        padding: 0 20px;
+    }
+
+    .main__banner-with-price-flex-container .main__banner-with-price-title {
+        font-size: 28px;
+        line-height: 41px;
+    }
+
+    .main__banner-with-price-flex-container .main__banner-with-price-description {
+        font-size: 15px;
+        line-height: 31px;
+    }
+
+    .main__banner-with-price .main__piece {
+        display: none;
+    }
+
+    /*Стили для футера*/
+
+    .body .footer {
+        padding: 32px 0 0;
+    }
+
+    .footer .fixed-container {
+        padding: 0 20px;
+    }
+
+    .footer .footer__nav {
+        font-size: 15px;
+
+        padding: 0;
+    }
+
+    .footer .footer__contacts {
+        font-size: 20px;
+
+        margin-top: 21px;
+        margin-left: 0;
+    }
+
+    /*Стили для контактов*/
+
+    .footer__contacts .footer__contacts-link {
+        margin-bottom: 19px;
+        padding-left: 32px;
+
+        background-size: 14px;
+    }
+
+    .footer .footer__recall-button {
+        margin: 0 0 49px 0;
+        padding: 17.5px 76px;
+    }
+
+    .footer .footer__author-rights {
+        font-size: 12px;
+
+        margin: 50px 0 0;
+        padding: 4px 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .header__recall-button:hover {
+        color: #fff;
+        background: linear-gradient(190deg, #14d16f, #07a1bd);
+    }
+}

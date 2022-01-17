@@ -1,0 +1,216 @@
+/*Стили для шапки сайта*/
+
+.header {
+    position: relative;
+
+    min-height: 768px;
+    padding-top: 31px;
+
+    background-color: #fbfbfb;
+}
+
+/*Стили для шапки с кнопкой и навигацией и номером телефона*/
+
+.header__nav-and-phone {
+    padding-bottom: 31px;
+}
+
+.header__nav-flex-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__burger-menu {
+    font-size: 25px;
+
+    display: none;
+
+    color: #000;
+    outline-color: #07a1bd;
+}
+
+.header__nav-list {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.header__nav-link {
+    margin: 0 15px;
+    padding-bottom: 5px;
+
+    transition: background-size .4s;
+
+    outline-color: #07a1bd;
+    background-image: linear-gradient(#07a1bd, #07a1bd);
+    background-position: 0 100%;
+    background-size: 0 2px;
+}
+
+.header__nav-link:hover {
+    color: #07a1bd;
+    background-size: 100% 2px;
+}
+
+.no-js .header__nav {
+    position: relative;
+    top: 0;
+
+    display: block;
+}
+
+.header__phone {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-right: 25px;
+
+    outline-color: #07a1bd;
+}
+
+.header__recall-button {
+    margin: 0;
+    padding: 12px 37px;
+
+    transition-duration: .25s;
+
+    color: #07a1bd;
+    border: none;
+    border: 1px solid #07a1bd;
+    background: transparent;
+}
+
+.header__recall-button-text {
+    margin: 0;
+}
+
+/*Стили для блока с фото и именем*/
+
+.header__title-and-photo {
+    padding-top: 25px;
+
+    background: url("data:image/svg+xml,<svg class='header__svg-img' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='813px' height='613px'><defs><linearGradient id='PSgrad_0' x1='0%25' x2='22.495%25' y1='97.437%25' y2='0%25'><stop offset='0%25' stop-color='rgb(7, 240, 120)' stop-opacity='1' /><stop offset='99%25' stop-color='rgb(7, 161, 189)' stop-opacity='1' /></linearGradient></defs><path fill-rule='evenodd' fill='rgb(96, 85, 196)' d='M395.520,40.407 C502.261,-10.048 602.994,-10.204 687.212,27.671 C771.647,65.238 839.568,140.836 885.703,234.785 C929.973,329.669 929.926,431.584 893.771,514.027 C857.115,597.700 796.105,660.782 712.966,705.804 C668.936,728.473 622.654,744.002 563.818,753.535 C505.757,762.929 435.141,766.325 360.325,761.479 C211.851,752.158 45.449,708.398 10.358,609.690 C-9.529,560.677 2.954,504.492 27.679,447.950 C52.809,391.326 90.181,334.346 129.419,281.835 C169.063,229.241 210.573,181.118 253.309,140.306 C296.450,99.410 340.817,65.827 395.520,40.407 L395.520,40.407 Z'/><path fill='url(%23PSgrad_0)' d='M395.520,40.407 C502.261,-10.048 602.994,-10.204 687.212,27.671 C771.647,65.238 839.568,140.836 885.703,234.785 C929.973,329.669 929.926,431.584 893.771,514.027 C857.115,597.700 796.105,660.782 712.966,705.804 C668.936,728.473 622.654,744.002 563.818,753.535 C505.757,762.929 435.141,766.325 360.325,761.479 C211.851,752.158 45.449,708.398 10.358,609.690 C-9.529,560.677 2.954,504.492 27.679,447.950 C52.809,391.326 90.181,334.346 129.419,281.835 C169.063,229.241 210.573,181.118 253.309,140.306 C296.450,99.410 340.817,65.827 395.520,40.407 L395.520,40.407 Z'/></svg>") no-repeat bottom right;
+}
+
+.header__title-flex-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__title-container {
+    position: relative;
+    z-index: 2;
+
+    padding: 63px 13px 158px;
+}
+
+.header__title {
+    font-size: 80px;
+    font-weight: 700;
+
+    padding-bottom: 44px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title-description {
+    font-size: 24.5px;
+    font-weight: lighter;
+
+    color: #8993ad;
+}
+
+/*Стили для кнопки рассчета стоимости*/
+
+.header__more-button {
+    font-size: 18px;
+
+    padding: 20px 72px;
+
+    transition-duration: .25s;
+
+    color: #fff;
+    border: none;
+    border: 1px solid #07a1bd;
+    background-color: #07a1bd;
+}
+
+.header__more-button:hover {
+    color: #07a1bd;
+    background-color: #fff;
+}
+
+.header__photo {
+    display: block;
+}
+
+/*Стили для летающих частиц*/
+
+.header__piece {
+    font-size: 50px;
+    font-weight: bold;
+
+    position: absolute;
+    z-index: 5;
+
+    background: linear-gradient(190deg,#04b85b 40%, #07a1bd 60%);
+    background-clip: border-box;
+    -webkit-background-clip: text;       
+
+    -webkit-text-fill-color: transparent;
+}
+
+.header__piece_brackets-elem {
+    top: 16%;
+    left: 7%;
+
+    transform: rotate(30deg);
+}
+
+.header__piece_div-tag-elem--small {
+    font-size: 30px;
+
+    top: 20.5%;
+    left: 41.5%;
+
+    transform: rotate(-20deg);
+}
+
+.header__piece_sharp-elem {
+    font-size: 55px;
+
+    top: 60%;
+    left: 13%;
+
+    transform: rotate(20deg);
+}
+
+.header__piece_slash-elem {
+    font-size: 40px;
+
+    bottom: 6.3%;
+    left: 19.8%;
+
+    transform: rotate(-20deg);
+}
+
+.header__piece_div-tag-elem--big {
+    font-size: 40px;
+
+    bottom: 23%;
+    left: 35.8%;
+
+    transform: rotate(20deg);
+}

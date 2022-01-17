@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", "Arial";
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #f9f9f9;
+
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+/*Cтили для класса, чтобы скрывать элементы*/
+
+.visually-hidden {
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+
+.no-repeat {
+    background-repeat: no-repeat;
+}
+
+/*Стили для центровщика*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+
